@@ -20,7 +20,9 @@ from rest_framework import routers, serializers, viewsets
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
-router.register(r'agenda', AgendaViewSet)
+router.register(r'agendas', AgendaViewSet)
+router.register(r'compromissos', CompromissoViewSet)
+router.register(r'convites', ConviteViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

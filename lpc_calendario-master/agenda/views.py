@@ -35,6 +35,14 @@ class AgendaViewSet(viewsets.ModelViewSet):
     queryset = Agenda.objects.all()
     serializer_class = AgendaSerializer
 
+class CompromissoViewSet(viewsets.ModelViewSet):
+    queryset = Compromisso.objects.all()
+    serializer_class = CompromissoSerializer
+
+class ConviteViewSet(viewsets.ModelViewSet):
+    queryset = Convite.objects.all()
+    serializer_class = ConviteSerializer
+
 
 # Create your views here.
 #a = AgendaPublica.objects.get(pk=id)
